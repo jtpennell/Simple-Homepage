@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="utf-8">
+<title>Home</title>
+<link rel="stylesheet" href="Homepage/animate.css">
+
+<style type="text/css">
+
+html {
+  background-color: black;
+  font-family: Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
+	}
+
+
+.box {
+	width: 500px;
+	height: 50%;
+	border: #a7a7a7 solid 2px; color: #DDDDCC;
+	display: block; padding: 5px; text-align: center;
+	margin: 250px auto;
+	opacity: 0.5;
+	}
+
+.center { text-align: center;}
+
+.links ul {
+    list-style-type: none;
+    width: auto;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+.links li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 14pt;
+}
+
+/* Change the link color on hover */
+.links li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.nav td {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.nav td a {
+    font-size: 20pt;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+}
+.nav td a:after {
+  content: '';
+  width: 75%;
+  position: absolute;
+  left: 14%;
+  bottom: 5px;
+  border-width: 0 0 1px;
+  border-style: solid;
+}
+.nav td a:hover {
+    background-color: gray;
+    color: white;
+}
+table {
+  margin: 0 auto;
+}
+
+#SectionB{
+  display: none;
+}
+#SectionC{
+  display: none;
+}
+
+</style>
+
+<script>
+var currentTab = "";
+
+function startup(){
+  showTabA();
+}
+
+function showTabA() {
+   if (currentTab != "TabA") {
+      currentTab = "TabA";
+      showNoTabs();
+      document.getElementById("SectionA").style.display = "inline";
+   }
+}
+
+function showTabB() {
+   if (currentTab != "TabB") {
+      currentTab = "TabB";
+      showNoTabs();
+      document.getElementById("SectionB").style.display = "inline";
+   }
+}
+
+function showTabC() {
+   if (currentTab != "TabC") {
+      currentTab = "TabC";
+      showNoTabs();
+      document.getElementById("SectionC").style.display = "inline";
+   }
+}
+function showNoTabs() {
+   document.getElementById("SectionA").style.display = "none";
+   document.getElementById("SectionB").style.display = "none";
+   document.getElementById("SectionC").style.display = "none";
+}
+
+</script>
+
+</head>
+
+<body onload="document.theFormID.theFieldID.focus();">
+<div class="box">
+  <div>
+    <table class="nav">
+      <tr>
+        <td id="TabA" onclick="showTabA();"><a>Main</a></td>
+        <td id="TabB" onclick="showTabB();"><a>School</a></td>
+        <td id="TabC" onclick="showTabC();"><a>Misc</a></td>
+      </tr>
+    </table>
+</div>
+
+<div id="SectionA">
+<table>
+  <tr><td>
+  <div class="links">
+  <ul>
+    <li><a href="https://www.youtube.com/feed/subscriptions">youtube</a></li>
+    <li><a href="https://www.netflix.com/browse">netflix</a></li>
+    <li><a href="https://9anime.to/">anime</a></li>
+  </ul>
+  </div>
+</td>
+<td>
+<div class="links">
+<ul>
+  <li><a href="https://mail.google.com/mail/u/0/#inbox">gmail</a></li>
+  <li><a href="https://facebook.com/">facebook</a></li>
+  <li><a href="https://discordapp.com/channels/@me">discord</a></li>
+</td>
+<td>
+<div class="links">
+<ul>
+  <li><a href="https://boards.4chan.org/g/catalog">4chan</a></li>
+  <li><a href="https://www.twitch.tv/directory">twitch</a></li>
+  <li><a href="https://play.google.com/music/listen?pli=1&u=1#/home">music</a></li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="SectionB">
+<table>
+  <tr><td>
+  <div class="links">
+  <ul>
+    <li><a href="https://iam.auckland.ac.nz/profile/SAML2/Redirect/SSO?execution=e1s1">sso</a></li>
+    <li><a href="https://canvas.auckland.ac.nz/">canvas</a></li>
+    <li><a href="https://piazza.com/class/">piazza</a></li>
+  </ul>
+  </div>
+</td>
+<td>
+<div class="links">
+  <ul>
+    <li><a href="https://jtpennell.github.io">Portfolio</a></li>
+    <li><a href="">link 2</a></li>
+    <li><a href="">link 3</a></li>
+  </ul>
+</td>
+<td>
+<div class="links">
+  <ul>
+    <li><a href="https://drive.google.com/drive/u/1/my-drive">unidrive</a></li>
+    <li><a href="https://adb.auckland.ac.nz/Home/Login?ReturnUrl=%2f">dropbox</a></li>
+    <li><a href="http://afsweb.ec.auckland.ac.nz/">echome</a></li>
+  </ul>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="SectionC">
+<table>
+  <tr><td>
+  <div class="links">
+    <ul>
+      <li><a href="https://github.com/">github</a></li>
+      <li><a href="https://drive.google.com/">drive</a></li>
+      <li><a href="">link 3</a></li>
+    </ul>
+  </div>
+</td>
+<td>
+<div class="links">
+  <ul>
+    <li><a href="">link 1</a></li>
+    <li><a href="">link 2</a></li>
+    <li><a href="">link 3</a></li>
+  </ul>
+</td>
+<td>
+<div class="links">
+  <ul>
+    <li><a href="">link 1</a></li>
+    <li><a href="">link 2</a></li>
+    <li><a href="">link 3</a></li>
+  </ul>
+</td>
+</tr>
+</table>
+</div>
+
+
+</div>
+
+<!--
+<footer>
+<div align="center" font-family="monospace">
+	<form  autocomplete="off" method="get" action="http://www.google.com/search" id="theFormID">
+		<div style="border:1px solid black;padding:4px;width:100%;">
+			<table border="0" cellpadding="0";>
+				<tr>
+					<td>
+						<input width="250px" padding-left="5px" autofocus="autofocus"  type="text" name="q" size="25"  value="";/> <input type="submit" value="Search" />
+					</td>
+				</tr>
+			</table>
+		</div>
+	</form>
+</div>
+</footer>
+-->
+
+</body>
+
+</html>
